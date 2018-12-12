@@ -1,0 +1,121 @@
+@import '../assets/normalize.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Source+Sans+Pro:300,300i,400,400i,600,700');
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    background-color: white;
+}
+
+
+
+.intro-wrapper {
+    margin: 0 auto;
+    position: relative;
+
+    nav {
+        position: absolute;
+        top: 4.875em;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        max-width: 62em;
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                &.dark {
+                    color: black;
+                    font-weight: 300;
+                }
+            }
+        }
+    }  
+    .hero {
+        position: absolute;
+        top: 8em;
+        left: 50%; 
+        transform: translate(-50%,0); 
+    }   
+}
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1900px;
+    margin: 0 auto;
+    
+    #intro-a {
+        background: #ffffff url(../assets/rain-teal.jpg) 100% 100% no-repeat;
+        min-height: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20em 20em;
+        grid-template-areas: "title blank"
+                             "tagline blank"
+                             "footer footer";
+        padding-top: 4.875em;
+
+        h2 {
+            padding-left: 5em;
+            grid-area: tagline;
+            justify-self: end;
+            color: white;
+            font-weight: 400;
+        }
+        h3 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 4.5em;
+            font-weight: 300;
+            color: #fff;
+            padding: 0 .6em 0 0;
+            margin: 0;
+            text-align: right;
+            grid-area: title;
+        }
+    }
+    #intro-b {
+        background-color: white;
+        min-height: 800px;
+        ul {
+            list-style: none;
+            font-size: 2.25em;
+            font-size: 2.25em;
+            color: #096c81;
+            padding-top: 11em;
+            padding-left: 6em;
+        }
+        caption {
+            float:right;
+            padding-top: 3em;
+            width:450px;
+            font-size: 1.2em;
+            font-weight: 300;
+            color: black;
+            text-align: left;
+        }
+    }
+    footer {
+        text-align: left;
+        color: white;
+        align-self: flex-end;
+        grid-area: footer;
+        padding-left: 1em;
+    }
+}
+
+
+.content {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
