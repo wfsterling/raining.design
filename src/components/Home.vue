@@ -19,11 +19,13 @@
           <li>Agile</li>
         </ul>
 
-        <caption><b>[ I'm learning VueJS to build out this website. Please be patient.]</b><br/>
-        Latest Update:<br/>
-        Completed first 'section of design'. Complicated CSS Grid and layering.<br/>
-        Next:<br/>
-        Complete 'home' page.</caption>
+        <caption>
+          <b>[ I'm learning VueJS to build out this website. Please be patient. Meanwhile, here's an <a href="/archive/wfsterling.yellow" target="_blank">archive</a> of the last site.]</b>
+          <br/>
+          Latest Update:<br/>
+          Completed first 'section of design'. Complicated CSS Grid and layering.<br/>
+          Next:<br/>
+          Complete 'home' page.</caption>
 
       </div>
 
