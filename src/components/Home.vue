@@ -45,6 +45,31 @@
       <img src="../assets/b1.png" />
     </div>
 
+
+    <div class="intro-bottom">
+      <p>This version of myself enjoys working with on killer 
+        teams striving to make a difference. Highly motivated 
+        to change the world... one design at a time. I’m 
+        passionate about life, my kids, and solving the 
+        hardest problems with the best of teams. </p>
+
+      <p>17 years designing on the web. I’ve designed everything.</p>
+
+      <ul>
+        <li class="lh">Problems I want to solve:</li>
+        <li>Green Energy</li>
+        <li>Healthcare</li>
+        <li>Mental Health</li>
+        <li>Starvation</li>
+      </ul>
+      <ul>
+        <li class="lh">How I want to do it:</li>
+        <li>Blockchain</li>
+        <li>User Centered Design</li>
+        <li>Rapid Prototyping</li>
+        <li>Design Thinking</li>
+      </ul>
+    </div>
     
 
   </div>
