@@ -6,8 +6,13 @@ html, body {
     font-weight: 300;
     background-color: white;
 }
-
-
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+.main-wrapper {
+    width: 100%;
+}
 
 .intro-wrapper {
     margin: 0 auto;
@@ -118,6 +123,36 @@ html, body {
     }
 }
 
+.intro2-wrapper {
+    max-width: 1900px;
+    background-color: #fff1e3;
+    color: black;
+    padding: 6em 37.5em 6em;
+    ul {
+        list-style-type: none;
+        text-align: center;
+        padding-top: 1em;
+        lh {
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        li {
+            font-size: 1.2em;
+            line-height: 1.8;
+
+        }
+
+    }
+    footer {
+        width: 100%;
+        padding-top: 5em;
+        p {
+            text-align: center;
+            font-size: .8em;
+
+        }
+    }
+}
 
 .content {
     max-width: 1300px;
