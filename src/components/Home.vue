@@ -17,14 +17,6 @@
             <li>Agile</li>
           </ul>
 
-          <!-- <caption>
-            <b>[ I'm learning VueJS to build out this website. Please be patient. Meanwhile, here's an <a href="/archive/wfsterling.yellow" target="_blank">archive</a> of the last site.]</b>
-            <br/>
-            Latest Update:<br/>
-            Completed first 'section of design'. Complicated CSS Grid and layering.<br/>
-            Next:<br/>
-            Complete 'home' page.</caption> -->
-
         </div>
         <div class="mobile-only mobile-intro-copy">
           <h2 class="intro-a-h2 mobile-only">Connecting<br/>dots...<br/>everywhere</h2>
@@ -83,33 +75,14 @@
           <li>Mental Health</li>
           <li>Starvation</li>
         </ul>
-      </div>
-
-      <!-- <div class="intro-bottom">
-        <p>This version of myself enjoys working with on killer 
-          teams striving to make a difference. Highly motivated 
-          to change the world... one design at a time. I’m 
-          passionate about life, my kids, and solving the 
-          hardest problems with the best of teams. </p>
-
-        <p>17 years designing on the web. I’ve designed everything.</p>
-
-        <ul>
-          <li class="lh">Problems I want to solve:</li>
-          <li>Green Energy</li>
-          <li>Healthcare</li>
-          <li>Mental Health</li>
-          <li>Starvation</li>
-        </ul>
         <ul>
           <li class="lh">How I want to do it:</li>
           <li>Blockchain</li>
           <li>User Centered Design</li>
           <li>Rapid Prototyping</li>
           <li>Design Thinking</li>
-        </ul>
-      </div> -->
-    
+      </ul>
+      </div>
 
       <footer>
         <p>&copy;Copyright 2018 RainingDesign. <span>All Rights Reserved.</span></p>
