@@ -1,6 +1,10 @@
 @import '../assets/normalize.scss';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Source+Sans+Pro:300,300i,400,400i,600,700');
 
+$primary: #04677b;
+$secondary: #fff1e3;
+$accent: #ffde00;
+
 html, body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
@@ -10,14 +14,21 @@ p {
     font-size: 1.2em;
     line-height: 1.6em;
 }
+
+
 .main-wrapper {
     width: 100%;
 }
-
+// Navigation
+nav {
+    @media screen and (max-width: 650px) {
+        display: none;
+    }
+}
 .intro-wrapper {
     margin: 0 auto;
     position: relative;
-
+    
     nav {
         position: absolute;
         top: 4.875em;
@@ -50,6 +61,32 @@ p {
         top: 8em;
         left: 50%; 
         transform: translate(-50%,0); 
+        display: grid;
+        @media screen and (max-width:900px){
+            top: 18em;
+        }
+        @media screen and (max-width: 650px){
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .hero-mobile {
+        display: none;
+        position: absolute;
+        @media screen and (max-width: 650px){
+            display: inline-block;
+            left: 0;
+            top: 8em;
+            transform: none;
+        }
+        img {
+
+            height: 100%;
+            width: 50%;
+            max-height: 500px;
+        }
     }   
 }
 .intro{
@@ -57,6 +94,12 @@ p {
     grid-template-columns: 1fr 1fr;
     max-width: 1900px;
     margin: 0 auto;
+    position: inherit;
+
+    @media screen and (max-width: 650px){
+        grid-template-columns: 1fr;
+        position: relative;
+    }
     
     #intro-a {
         background: #ffffff url(../assets/rain-teal.jpg) 100% 100% no-repeat;
@@ -65,9 +108,19 @@ p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 20em 20em;
         grid-template-areas: "title blank"
-                             "tagline blank"
-                             "footer footer";
+                             "tagline blank";
         padding-top: 4.875em;
+
+        @media screen and (max-width: 650px) {
+            grid-template-columns: 1fr;
+            grid-template-areas: "title" "tagline";
+            padding-top: 0;
+
+            // This clipping path is also cropping any other 
+            // content or copy inside it.
+            -webkit-clip-path: polygon(89% 0, 0 0, 0 86%);
+            clip-path: polygon(89% 0, 0 0, 0 86%);
+        }
 
         h2 {
             padding-left: 5em;
@@ -75,8 +128,12 @@ p {
             justify-self: end;
             color: white;
             font-weight: 400;
+            @media screen and (max-width: 650px) {
+                color: $primary;
+            }
         }
         h3 {
+            width: 100%;
             font-family: 'Open Sans Condensed', sans-serif;
             font-size: 4.5em;
             font-weight: 300;
@@ -85,18 +142,57 @@ p {
             margin: 0;
             text-align: right;
             grid-area: title;
+            @media screen and (max-width:1600px){
+                padding-top:.6em;
+            }
+            @media screen and (max-width:650px){
+                text-align: center;
+                margin: 0;
+                font-size: 4em;
+            }
         }
     }
+    .mobile-intro-copy {
+        position: absolute;
+        right: 0;
+        top: 18%;
+        width: 45%;
+
+        .intro-a-h2 {
+            text-align: right;
+            color: $primary;
+            font-weight: 300;
+            font-size: 2em;
+            padding-right: .4em;
+        }
+        ul {
+            list-style: none;
+            font-size: 1.6em;
+            font-weight: 400;
+            line-height: 1.4em;
+            color: $primary;
+            margin: 0 .4em 0 0;
+            padding: .6em 0 0;
+            @media screen and (max-width:500px){
+                font-size: 1.4em;
+            }
+        }
+    }
+    
     #intro-b {
         background-color: white;
         min-height: 800px;
+        display: inherit;
         ul {
             list-style: none;
             font-size: 2.25em;
             font-size: 2.25em;
             color: #096c81;
             padding-top: 11em;
-            padding-left: 6em;
+            padding-left: 44%;
+            @media screen and (max-width:900px){
+                font-size: 2em;
+            }
         }
         caption {
             float:right;
@@ -108,18 +204,15 @@ p {
             color: black;
             text-align: left;
         }
+        
+        @media screen and (max-width:650px){
+            display: none;
+        }
     }
     .intro-bottom {
         background-color: white;
         color: black;
         padding: 2em 12em;
-    }
-    footer {
-        text-align: left;
-        color: white;
-        align-self: flex-end;
-        grid-area: footer;
-        padding-left: 1em;
     }
 }
 
@@ -127,7 +220,13 @@ p {
     max-width: 1900px;
     background-color: #fff1e3;
     color: black;
-    padding: 6em 37.5em 6em;
+    display: grid;
+    grid-template-columns: auto 20em auto;
+
+    .intro2-content {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
     ul {
         list-style-type: none;
         text-align: center;
@@ -143,20 +242,49 @@ p {
         }
 
     }
-    footer {
-        width: 100%;
-        padding-top: 5em;
-        p {
-            text-align: center;
-            font-size: .8em;
+    
+}
+footer {
+    width: 100%;
+    padding-top: 5em;
+    grid-column-start: 2;
+    
+    p {
+        text-align: center;
+        font-size: .8em;
 
-        }
     }
 }
-
 .content {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
 }
 
+.mobile-only {
+    display: none;
+    @media screen and (max-width: 650px){
+        display: inherit;
+    }
+}
+
+.dots {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    justify-self: end;
+    grid-row-gap: 1.2em;
+}
+.dot {
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    background-color: $accent;
+}
+.r1 {
+    grid-column-start: 5;
+}
+.l1 {
+    grid-column-start: 1;
+}
