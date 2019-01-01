@@ -61,7 +61,7 @@
     <!-- INTRO 2 -->
     <div class="intro2-wrapper">
       <div class="content">
-        <p>This version of myself enjoys working with on killer teams 
+        <p>Today I enjoy working on killer teams 
           striving to make a difference. Highly motivated to change 
           the world... one design at a time. I’m passionate about life, 
           my kids, and solving the hardest problems with the best of teams.</p>
