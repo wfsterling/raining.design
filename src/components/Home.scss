@@ -186,7 +186,7 @@ nav {
             grid-template-columns: 1fr;
             grid-template-areas: "title" "tagline";
             padding-top: 0;
-
+            min-height: 631px;
             // This clipping path is also cropping any other 
             // content or copy inside it.
             -webkit-clip-path: polygon(89% 0, 0 0, 0 86%);
@@ -297,27 +297,47 @@ nav {
 .intro2-wrapper {
     max-width: 1900px;
     margin: 0 auto;
+    padding: 3em 0;
     background-color: #fff1e3;
     color: black;
     display: grid;
     grid-template-columns: auto 22em auto;
-
-    
+    @media screen and (max-width: 650px){
+        padding: 1.8em 0 0;
+    }
     
 }
 .full.how {
     max-width: 1900px;
     margin: 0 auto;
+    padding: 3em 0 0;
     color: black;
     display: grid;
     grid-template-columns: auto 22em auto;
     position: relative;
     background: white url("../assets/art-museum.jpg") 0 20% no-repeat;
     background-size: 36%;
+    @media screen and (max-width: 650px){
+        background-image: none;
+        grid-template-columns: auto;
+        padding: 1.8em 0 0;
+        .content {
+            padding: 0 .8em;
+        }
+    }
     .how-image {
         position: absolute;
         left: 0;
         top: 8em;
+        @media screen and (max-width: 650px){
+            width: 100%;
+            position: inherit;
+            left: auto;
+            top: auto;
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -334,7 +354,10 @@ footer {
     width: 100%;
     padding-top: 5em;
     grid-column-start: 2;
-    
+    background-color: #fff1e3;
+    @media screen and (max-width: 650px){
+        padding-top: 3em;
+    }
     p {
         text-align: center;
         font-size: .8em;
@@ -342,7 +365,7 @@ footer {
     }
     ul {
         width: 100%;
-        margin: 0;
+        margin: 0 0 1em;
         padding: 0;
         list-style: none;
         display: grid;

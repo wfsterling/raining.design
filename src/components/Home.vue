@@ -44,7 +44,7 @@
       <nav>
         <ul class="navigation">
           <li>About</li>
-          <li>Projects</li>
+          <li><a href='/projects'>Projects</a></li>
           <li class="dark">Passions</li>
           <li class="dark">Contact</li>
         </ul>
@@ -88,13 +88,15 @@
     </div>
 
     <div class="full bg how">
-      <!-- <div class="how-image"><img src="../assets/art-museum.jpg"></div> -->
+      
       <div class="content">
         <h2>The hardest problems with the best of teams.</h2>
         <p>I’ve worked on a lot of good teams and fun projects. Gained a ton of knowledge in development, lean and agile methodologies. I have spent years mastering front-end styling, UI frameworks, and styleguides. This experience has bread comfort in designing for any platform.</p>
         <p>My favorite projects are the ones that challenge the norms. I enjoy disruptive ideas, forward thinking and helping people. The bigger the problem, the more rewarding the solution.</p>
         <p>But what motivates me more than anything is the power of user centered design. Using empathy to create products people WANT to share, machine-learning to automate our world, and testing to ensure success. My success, dedication and passion have contributed to the leadership qualities I bring to every project.</p>
-      
+
+        <div class="how-image mobile-only"><img src="../assets/art-museum.jpg"></div>
+
         <ul>
           <li class="lh">Tools of my trade</li>
           <li>UX:</li>
