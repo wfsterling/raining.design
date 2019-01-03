@@ -118,12 +118,15 @@ nav {
             li {
                 font-weight: 600;
                 text-transform: uppercase;
-                color: #fff;
                 text-align: center;
-                &.dark {
+                a {
+                    color: #fff;
+                }
+                &.dark a {
                     color: black;
                     font-weight: 300;
                 }
+
             }
         }
     }  

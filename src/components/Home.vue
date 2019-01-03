@@ -41,14 +41,14 @@
       </div>
 
       <!-- NAVIGATION -->
-      <nav>
+      <!-- <nav>
         <ul class="navigation">
-          <li>About</li>
-          <li><a href='/projects'>Projects</a></li>
-          <li class="dark">Passions</li>
-          <li class="dark">Contact</li>
+          <li><router-link to='/'>About</router-link></li>
+          <li><router-link to='/projects'>Projects</router-link></li>
+          <li class="dark"><router-link to='/passions'>Passions</router-link></li>
+          <li class="dark"><router-link to='/contact'>Contact</router-link></li>
         </ul>
-      </nav>
+      </nav> -->
 
       <div class="hero">
         <img src="../assets/b1.png" />

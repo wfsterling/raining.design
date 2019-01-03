@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    This is projects
+    This is Contact
     <nav>
         <ul class="navigation">
           <li><router-link to='/'>About</router-link></li>
@@ -15,12 +15,12 @@
 
 <script>
 export default {
-  name: 'Projects',
+  name: 'Contact',
   props: {
-    msg: String
+    msg: name
   }
 }
-import './Projects.scss'
+import './Contact.scss'
 </script>
 
 
